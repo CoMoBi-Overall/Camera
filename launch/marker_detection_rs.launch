@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+  
+  <node name="marker_detection" pkg="camera_overall" type="marker_detection_rs.py" output="screen"/>
+
+</launch>
