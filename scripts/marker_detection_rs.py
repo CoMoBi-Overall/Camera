@@ -113,6 +113,8 @@ class marker_detection:
 
                     dist = 2 * math.sqrt(sum)
 
+                    # print(dist)
+
                     trans = Transform(translation=Vector3(zval, -xval, -yval),
                             rotation=Quaternion(*tf.transformations.quaternion_from_matrix(rot_mat)) # quaternion_from_euler(euler angles: yaw, pitch, roll)
                             )
@@ -124,7 +126,7 @@ class marker_detection:
                     trans_stamp = TransformStamped(header, 'aruco_marker' + str(ids), trans)
                     br.sendTransformMessage(trans_stamp)
 
-        # cv2.imshow("Marker", frame_markers)
+        cv2.imshow("Marker", frame_markers)
         # cv2.moveWindow("Marker", 40,540)
         cv2.waitKey(1)
 
