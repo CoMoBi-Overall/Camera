@@ -4,12 +4,12 @@
 
   <include file="$(find realsense2_camera)/launch/rs_camera.launch">
     <arg name="align_depth"   value="true"/>
-    <arg name="color_width"   value="424"/>
+    <!-- <arg name="color_width"   value="424"/>
     <arg name="color_height"   value="240"/>
     <arg name="color_fps"   value="15"/>
     <arg name="depth_width"   value="424"/>
     <arg name="depth_height"   value="240"/>
-    <arg name="depth_fps"   value="15"/>
+    <arg name="depth_fps"   value="15"/> -->
   </include>
 
   <include file="$(find camera_overall)/launch/object_tracking_with_py3.launch"/>

@@ -126,7 +126,7 @@ class marker_detection:
                     trans_stamp = TransformStamped(header, 'aruco_marker' + str(ids), trans)
                     br.sendTransformMessage(trans_stamp)
 
-        cv2.imshow("Marker", frame_markers)
+        # cv2.imshow("Marker", frame_markers)       <-- You can identify ArUco marker's TF in "Marker" Window.
         # cv2.moveWindow("Marker", 40,540)
         cv2.waitKey(1)
 
