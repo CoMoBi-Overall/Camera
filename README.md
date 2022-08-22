@@ -11,7 +11,7 @@ To activate it, you will need
 - Realsense SDK 2.0
 - Realsense ROS package
 - OpenCV4
-- darknet_ros
+- [darknet_ros](https://github.com/leggedrobotics/darknet_ros)
 
 ## Notice
 The script in this package is tested on **python3** environment
@@ -21,6 +21,7 @@ The script in this package is tested on **python3** environment
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/gmkim97/camera-overall
 (OR https://github.com/CoMoBot-Perception/camera-overall)
+(OR https://github.com/CoMoBi-Overall/Camera.git)
 $ cd ~/catkin_ws/
 $ catkin_make
 ```
