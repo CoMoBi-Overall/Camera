@@ -95,6 +95,8 @@ class ImageListener:
 
                 trans_stamp = TransformStamped(header, object_name + str(object_count), trans)
                 br.sendTransformMessage(trans_stamp)
+
+            rate.sleep()
         
 
 
